@@ -32,14 +32,14 @@ $(function() {
   $(document).ready(function(e) {
     $(".menu li a, .middle-content a, .arrow-down a, .hire a").on("click", function(e) {
       var windowWidth = $(window).width();
-
-      if (windowWidth >= 768) {
-        htmlBody.animate({scrollTop: $(this.hash).offset().top - 50}, 800, "easeInOutQuart");  
+      if($(this.hash)[0]){
+        if (windowWidth >= 768) {
+          htmlBody.animate({scrollTop: $(this.hash).offset().top - 50}, 800, "easeInOutQuart");  
+        } else {
+          htmlBody.animate({scrollTop: $(this.hash).offset().top - 20}, 800, "easeInOutQuart");
+        }
+        e.preventDefault();
       }
-      if (windowWidth <= 767) {
-        htmlBody.animate({scrollTop: $(this.hash).offset().top - 20}, 800, "easeInOutQuart");
-      }
-      e.preventDefault();
     });
   });
 
@@ -270,23 +270,23 @@ $(function() {
   /*===============================================
     Google Maps
   ===============================================*/
-  var markerIcon = "images/marker.png";
-  // Map Initial Location
-  var initLatitude = -37.812154; // <- Latitude here
-  var initLongitude = 144.954619; // <- Longitude here
+  // var markerIcon = "images/marker.png";
+  // // Map Initial Location
+  // var initLatitude = -37.812154; // <- Latitude here
+  // var initLongitude = 144.954619; // <- Longitude here
   
-  var map = new GMaps({
-    el: '#map-canvas',
-    lat: initLatitude,
-    lng: initLongitude,
-    zoom: 16,
-    scrollwheel: false
-  });
-  map.addMarker({
-    lat : initLatitude,
-    lng : initLongitude,
-    icon: markerIcon
-  });
+  // var map = new GMaps({
+  //   el: '#map-canvas',
+  //   lat: initLatitude,
+  //   lng: initLongitude,
+  //   zoom: 16,
+  //   scrollwheel: false
+  // });
+  // map.addMarker({
+  //   lat : initLatitude,
+  //   lng : initLongitude,
+  //   icon: markerIcon
+  // });
   /*===============================================
     end Google Maps
   ===============================================*/

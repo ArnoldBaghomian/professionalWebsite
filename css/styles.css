@@ -1,9 +1,5 @@
 /*------------------------------------------------
-*	Template name: MYDA - Personal Resume and Portfolio
-*	Version	  : 1.2.1
-*	Author    : FlaTheme
-*	Author URL: http://themeforest.net/user/flatheme
-*
+
 *	Table of contents:
 *	1. 	Body/Main
 *	2.	Toggle Menu
@@ -335,6 +331,7 @@ textarea:focus,
 .menu .nav li a {
 	position: relative;
 	margin: 0;
+	font-size: 14px;
 	padding: 1px 2px;
 	color: rgba(30, 30, 30, 0.8);
 }
@@ -398,6 +395,8 @@ textarea:focus,
 .home-background h1 {
 	margin-bottom: 10px;
 	color: #fff;
+	font-size: 50px;
+	font-family:Raleway;
 }
 
 .home-background span {
@@ -406,7 +405,7 @@ textarea:focus,
 	border-right: 3px double rgba(255, 255, 255, 0.3);
 	color: rgb(255, 255, 255);
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 18px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -482,7 +481,7 @@ textarea:focus,
 }
 
 .aboutWrapper i {
-	font-size: 14px;
+	font-size: 24px;
 }
 
 .social li {
@@ -582,7 +581,6 @@ textarea:focus,
 }
 
 .progress-bar {
-	position: relative;
 	background: transparent;
 	box-shadow: none;
 }
